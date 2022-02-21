@@ -12,6 +12,6 @@ main.py文件是主程序<br>
 下面只列出COLON CANCER数据集的实验结果<br>
 
 |MOTHOD|Accracy|
-|----|----|----|----|----|
+|----|----|
 |attention|90.400%|
-|attention-gated|85.000%|
+|attention-gated|89.000%|

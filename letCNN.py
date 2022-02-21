@@ -19,8 +19,9 @@ class CNN_net(torch.nn.Module):
         self.layer4 = nn.Linear(512,1,bias=False)
     def forward(self,x , gate = True):
         x = self.layer1(x)
+        x = x.view(-1, 48 * 5 * 5)
         # print(x.shape)
-        x = x.view(361,-1)
+        # x = x.view(361,-1)
         # print(x[0])
         x = self.layer2(x)
         x = self.layer3(x)

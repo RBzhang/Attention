@@ -2,8 +2,10 @@
 复现论文"Attention-based Deep Multiple Instance Learning"<br>
 ## 文件介绍
 
-loader.py是读取.bmp图像文件的代码<br>
-dataset.py是利用从图像文件读取出来的数据构建神经网络的输入数据代码<br>
+k_fold_cross.py是拆分数据集的代码，用于十折交叉验证<br>
+addition_trainf.py是对图像进行预处理的模块<br>
+imgloader.py是从原始图像中提取数据并进行处理的代码，将图像以Tensor的形式加载到内存中<br>
+loader_data.py利用上一个模块的数据加载数据<br>
 letCNN.py文件是模型代码<br>
 main.py文件是主程序<br>
 
